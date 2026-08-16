@@ -7,28 +7,30 @@
 <meta name="description" content="Fiza Tahir — Computer Science student exploring AI, machine learning, web development, and digital marketing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-name">Fiza Tahir</a>
+<header class="nav-wrap">
+  <div class="nav" id="nav">
+    <a href="#top" class="nav-name">Fiza<span>.</span></a>
 
     <nav class="nav-links" id="navLinks">
       <a href="#top">Home</a>
-      <a href="#work">Work</a>
       <a href="#about">About</a>
+      <a href="#work">My Work</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="nav-cta">Let's Talk</a>
     </nav>
 
+    <div class="nav-actions">
+      <a href="#" class="nav-resume">My Resume</a>
+      <a href="#contact" class="btn btn-dark">Hire Me Now</a>
+    </div>
+
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
   </div>
 </header>
@@ -38,175 +40,162 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-text reveal">
-      <p class="eyebrow">Computer Science • AI • Technology</p>
-      <h1 class="hero-headline">AI finds the <em>insight</em>. I turn it into something people can use.</h1>
-      <p class="hero-sub">I'm Fiza Tahir, a Computer Science student exploring AI, machine learning, web development, and digital marketing. I enjoy taking complex ideas, finding the useful insight, and turning them into work that is clear, practical, and human.</p>
+      <p class="status-tag"><span class="status-dot"></span> Open to opportunities</p>
+
+      <p class="hero-hello">Hello, I'm</p>
+      <h1 class="hero-name">Fiza Tahir</h1>
+      <p class="hero-role">AI <span class="hero-role-divider">×</span> Marketing <span class="hero-role-divider">×</span> Web Dev</p>
+
+      <p class="hero-bio">A Computer Science student exploring AI, machine learning, web development, and digital marketing — I find the useful insight and turn it into work that's clear, practical, and human.</p>
 
       <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">View My Work <span aria-hidden="true">→</span></a>
-        <a href="#about" class="btn btn-secondary">About Me <span aria-hidden="true">→</span></a>
+        <a href="#contact" class="btn btn-dark">Hire Me Now <span aria-hidden="true">→</span></a>
+        <a href="#work" class="btn btn-outline">View My Work</a>
       </div>
 
-      <p class="hero-note">Currently learning, building, and experimenting.</p>
+      <div class="hero-socials" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/fizatahir/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/Fizaa-Tahir" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+      </div>
     </div>
 
     <div class="hero-visual reveal" aria-hidden="true">
-      <svg viewBox="0 0 420 420" class="signature-svg">
-        <line x1="90" y1="330" x2="210" y2="90" class="sig-line" pathLength="1"></line>
-        <line x1="210" y1="90" x2="330" y2="230" class="sig-line sig-line-2" pathLength="1"></line>
-        <circle cx="90" cy="330" r="6" class="sig-dot sig-dot-1"></circle>
-        <circle cx="210" cy="90" r="6" class="sig-dot sig-dot-2"></circle>
-        <circle cx="330" cy="230" r="6" class="sig-dot sig-dot-3"></circle>
-        <text x="60" y="365" class="sig-label">Insight</text>
-        <text x="180" y="65" class="sig-label">Build</text>
-        <text x="300" y="265" class="sig-label">Learn</text>
-      </svg>
+      <div class="type-panel">
+        <span class="type-tag type-tag-1">AI</span>
+        <span class="type-tag type-tag-2">SEO</span>
+        <span class="type-tag type-tag-3">ML</span>
+        <span class="type-mono">FT</span>
+        <span class="type-word">insight.</span>
+        <span class="type-word type-word-outline">build.</span>
+        <span class="type-word">learn.</span>
+      </div>
     </div>
   </section>
 
-  <!-- ============ INTRODUCTION ============ -->
-  <section class="intro">
-    <div class="intro-inner reveal">
-      <p class="eyebrow">A little about the work</p>
-      <h2 class="section-heading">Curious about how technology becomes useful.</h2>
-      <p class="intro-copy">I come from a Computer Science background, but what holds my attention is the space between disciplines — where AI, data, communication, and creativity meet. I like figuring out how a technical idea becomes something a real person can actually use, and I learn most of what I know by building it myself.</p>
-      <a href="#about" class="text-link">More about me <span aria-hidden="true">→</span></a>
+  <!-- ============ TOOLS BANNER ============ -->
+  <section class="tools-banner">
+    <div class="tools-track">
+      <span>Python</span><span>#</span>
+      <span>Machine Learning</span><span>#</span>
+      <span>HTML / CSS</span><span>#</span>
+      <span>JavaScript</span><span>#</span>
+      <span>SEO</span><span>#</span>
+      <span>Content Strategy</span><span>#</span>
+      <span>scikit-learn</span><span>#</span>
+      <span>Git &amp; GitHub</span>
     </div>
   </section>
 
-  <!-- ============ SELECTED WORK ============ -->
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="about-inner reveal">
+      <p class="eyebrow-center">About Me</p>
+      <h2 class="section-heading-center">Still learning. Still building. Always curious.</h2>
+      <p class="about-copy">I'm a Computer Science student who likes exploring different corners of technology instead of picking one lane too early — AI, web development, and marketing all pull at my attention for different reasons. Most of what I know, I've learned by actually building something and figuring out where it broke. I come from a background of turning technical ideas into things a real person can use, working across research, data, and communication.</p>
+
+      <div class="about-actions">
+        <a href="#contact" class="btn btn-dark">Hire Me Now <span aria-hidden="true">→</span></a>
+        <a href="#work" class="btn btn-outline">See My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MY WORK ============ -->
   <section class="work" id="work">
     <div class="work-header reveal">
-      <p class="eyebrow">Selected work</p>
-      <h2 class="section-heading">Things I've built, explored, and learned from.</h2>
+      <p class="eyebrow-light">Selected Work</p>
+      <h2 class="section-heading-light">Things I've built, explored, and learned from.</h2>
+      <div class="work-tabs" id="workTabs">
+        <button class="work-tab is-active" data-filter="all">All</button>
+        <button class="work-tab" data-filter="web">Web Development</button>
+        <button class="work-tab" data-filter="ai">AI • Marketing</button>
+        <button class="work-tab" data-filter="ml">Machine Learning</button>
+      </div>
     </div>
 
-    <!-- PROJECT 01 — WEB DEVELOPMENT -->
-    <article class="project reveal">
-      <div class="project-media">
-        <div class="media-placeholder">[ADD PROJECT SCREENSHOT]</div>
-      </div>
-      <div class="project-body">
-        <p class="project-category"><span class="project-index">I</span> Web Development</p>
-        <h3 class="project-title">[ADD REAL WEB PROJECT TITLE]</h3>
-        <p class="project-desc">[ADD PROJECT DESCRIPTION — what it was, what you built, and one or two features worth mentioning.]</p>
-        <ul class="project-stack">
-          <li>[ADD TECHNOLOGY]</li>
-          <li>[ADD TECHNOLOGY]</li>
-          <li>[ADD TECHNOLOGY]</li>
-        </ul>
-        <a href="#" class="text-link">View Project <span aria-hidden="true">→</span></a>
-      </div>
-    </article>
+    <div class="work-list" id="workList">
+      <!-- PROJECT 01 -->
+      <article class="work-row reveal" data-category="web">
+        <div class="work-row-media">
+          <img src="assets/trendora-hero.jpg" alt="Trendora fashion e-commerce homepage" loading="lazy">
+        </div>
+        <div class="work-row-body">
+          <span class="work-card-tag">Web Development</span>
+          <h3>Trendora — Fashion E-Commerce Storefront</h3>
+          <p>A multi-page fashion storefront built around a Winter '25 collection — a homepage with featured category tiles, a Ready-to-Wear catalog with sort/filter controls, and full product detail pages with size selection, quantity controls, and an add-to-cart flow.</p>
+          <ul class="project-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a href="#" class="btn btn-dark btn-small">Live Preview <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
 
-    <!-- PROJECT 02 — AI & MARKETING -->
-    <article class="project project-reverse reveal">
-      <div class="project-media">
-        <div class="media-placeholder">[ADD PROJECT SCREENSHOT]</div>
-      </div>
-      <div class="project-body">
-        <p class="project-category"><span class="project-index">II</span> AI • Marketing</p>
-        <h3 class="project-title">AI-assisted Marketing</h3>
-        <p class="project-desc">Exploring how AI tools fit into real marketing and content workflows — from research and SEO to writing, critiquing, and revising copy. This work draws on hands-on practice with AI-assisted research and content strategy, learning where AI genuinely helps and where a human judgment call still matters.</p>
-        <ul class="project-stack">
-          <li>AI-assisted research</li>
-          <li>SEO</li>
-          <li>Content strategy</li>
-        </ul>
-        <a href="#" class="text-link">View Case Study <span aria-hidden="true">→</span></a>
-      </div>
-    </article>
+      <!-- PROJECT 02 -->
+      <article class="work-row reveal" data-category="ai">
+        <div class="work-row-media">[ADD PROJECT SCREENSHOT]</div>
+        <div class="work-row-body">
+          <span class="work-card-tag">AI • Marketing</span>
+          <h3>AI-assisted Marketing</h3>
+          <p>Hands-on work across offer strategy, copywriting, and growth research — drafting and pressure-testing landing page copy (including 20 headline variations before landing on a final direction), building an acquisition-channel report comparing five communities with 30-day KPI targets, and writing a competitive paid-ad teardown analyzing a brand's Meta creative against two competitors.</p>
+          <ul class="project-stack">
+            <li>Copywriting</li>
+            <li>Competitive research</li>
+            <li>SEO / AEO</li>
+          </ul>
+          <a href="#" class="btn btn-dark btn-small">Live Preview <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
 
-    <!-- PROJECT 03 — MACHINE LEARNING -->
-    <article class="project reveal">
-      <div class="project-media">
-        <div class="media-placeholder">[ADD PROJECT SCREENSHOT]</div>
-      </div>
-      <div class="project-body">
-        <p class="project-category"><span class="project-index">III</span> Machine Learning</p>
-        <h3 class="project-title">Cart Abandonment Prediction</h3>
-        <p class="project-desc">A machine learning project predicting whether a customer is likely to abandon their cart, covering data preprocessing, feature selection, model training, and evaluation. The current build is still being refined — this case study walks through the methodology, the models tried, and what the evaluation results revealed.</p>
-        <ul class="project-stack">
-          <li>Python</li>
-          <li>Pandas / scikit-learn</li>
-          <li>Model evaluation</li>
-        </ul>
-        <a href="#" class="text-link">View Case Study <span aria-hidden="true">→</span></a>
-      </div>
-    </article>
+      <!-- PROJECT 03 -->
+      <article class="work-row reveal" data-category="ml">
+        <div class="work-row-media">[ADD PROJECT SCREENSHOT]</div>
+        <div class="work-row-body">
+          <span class="work-card-tag">Machine Learning</span>
+          <h3>Cart Abandonment Prediction</h3>
+          <p>A full ML pipeline on ~4,280 e-commerce sessions across 13 behavioral attributes — missing-value imputation, Box-Cox normalization, feature selection via RFE and Random Forest importance narrowed to 5 key signals, and SMOTE to correct class imbalance. The final Logistic Regression model reached ~98% accuracy (Cohen's Kappa 0.94 on held-out test data), then wrapped in a small Flask app for real-time predictions.</p>
+          <ul class="project-stack">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>Flask</li>
+          </ul>
+          <a href="#" class="btn btn-dark btn-small">Live Preview <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
 
     <p class="work-footer reveal">More experiments, projects, and case studies coming as I build.</p>
   </section>
 
-  <!-- ============ TOOLS & AREAS ============ -->
-  <section class="skills">
-    <div class="skills-header reveal">
-      <p class="eyebrow">Tools & areas</p>
-      <h2 class="section-heading">Technology, analysis, and communication.</h2>
-    </div>
-
-    <div class="skills-grid reveal">
-      <div class="skills-group">
-        <h3 class="skills-group-title">AI & Data</h3>
-        <ul>
-          <li>Python</li>
-          <li>Machine Learning</li>
-          <li>Data Analysis</li>
-          <li>Pandas</li>
-          <li>NumPy</li>
-          <li>scikit-learn</li>
-        </ul>
-      </div>
-      <div class="skills-group">
-        <h3 class="skills-group-title">Development</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-      <div class="skills-group">
-        <h3 class="skills-group-title">Marketing & Communication</h3>
-        <ul>
-          <li>AI-assisted research</li>
-          <li>Copywriting</li>
-          <li>SEO</li>
-          <li>Ad Copy</li>
-          <li>Content Strategy</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PERSONAL STATEMENT ============ -->
-  <section class="statement">
-    <p class="statement-text reveal">I'm less interested in making things look complicated — and more interested in making complicated things make sense.</p>
-  </section>
-
-  <!-- ============ ABOUT PREVIEW ============ -->
-  <section class="about" id="about">
-    <div class="about-inner reveal">
-      <p class="eyebrow">About me</p>
-      <h2 class="section-heading">Still learning. Still building. Always curious.</h2>
-      <p class="about-copy">I'm a Computer Science student who likes exploring different corners of technology instead of picking one lane too early — AI, web development, and marketing all pull at my attention for different reasons. Most of what I know, I've learned by actually building something and figuring out where it broke.</p>
-      <a href="#" class="text-link">Read More About Me <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT CTA ============ -->
+  <!-- ============ CONTACT ============ -->
   <section class="contact" id="contact">
     <div class="contact-inner reveal">
-      <p class="eyebrow">Let's connect</p>
-      <h2 class="section-heading">Have an idea worth exploring?</h2>
-      <p class="contact-copy">I'm always interested in thoughtful conversations around AI, technology, marketing, and the things we can build with them.</p>
-      <a href="mailto:hello@example.com" class="btn btn-primary">Get in Touch <span aria-hidden="true">→</span></a>
+      <p class="eyebrow-center">Get In Touch</p>
+      <h2 class="section-heading-center">Have an idea worth exploring?</h2>
+      <p class="contact-copy">If you have any question or feedback, use the form below — I'll get back to you.</p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fullName">Full Name*</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Your Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="projectInfo">About Project*</label>
+          <textarea id="projectInfo" name="projectInfo" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark form-submit">Submit <span aria-hidden="true">→</span></button>
+      </form>
 
       <div class="social-links">
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="X">X</a>
+        <a href="https://www.linkedin.com/in/fizatahir/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Fizaa-Tahir" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
