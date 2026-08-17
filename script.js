@@ -27,7 +27,49 @@ if (navToggle && navLinks) {
   });
 }
 
-/* ---------- Scroll reveal ---------- */
+/* ---------- Work filter tabs ---------- */
+const workTabs = document.getElementById('workTabs');
+const workList = document.getElementById('workList');
+
+if (workTabs && workList) {
+  const tabs = workTabs.querySelectorAll('.work-tab');
+  const rows = workList.querySelectorAll('.work-row');
+
+  workTabs.addEventListener('click', (e) => {
+    const tab = e.target.closest('.work-tab');
+    if (!tab) return;
+
+    tabs.forEach((t) => t.classList.remove('is-active'));
+    tab.classList.add('is-active');
+
+    const filter = tab.dataset.filter;
+    rows.forEach((row) => {
+      const show = filter === 'all' || row.dataset.category === filter;
+      row.classList.toggle('is-hidden', !show);
+    });
+  });
+}
+
+/* ---------- Contact form ---------- */
+// Static site, no backend — this opens the visitor's email client with the
+// message pre-filled. Swap the mailto address for your real one, or point
+// this at a form service (e.g. Formspree) if you'd rather receive submissions
+// directly without the visitor needing their own email client to open.
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const info = document.getElementById('projectInfo').value;
+
+    const subject = encodeURIComponent(`Project inquiry from ${name}`);
+    const body = encodeURIComponent(`${info}\n\n— ${name} (${email})`);
+
+    window.location.href = `mailto:fizaatahir1506@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
 const revealEls = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window && revealEls.length) {
